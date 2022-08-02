@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { FaFacebook, FaLinkedin, FaGoogle, FaRegEnvelope} from "react-icons/fa";
+import { MdLockOutline } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -12,58 +13,52 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <div className='bg-gray-200 rounded-2xl shadow-2xl flex w-2/3 text-center max-w-4xl'>
+          <div className='w-3/5 p-5'>
+            <div className='text-left font-bold'>
+              <span className='text-green-500'>Company</span>Name
+            </div>
+            <div className=''>
+              <h2 className='text-3xl font-bold text-green-500 mb-2' >Sigh in to account</h2>
+              <div className='border-2 w-10 border-green-500 inline-block mb-2 rounded'></div>
+              <div className='flex justify-center my-2'>
+                <a href='#' className='border-2 border-white-200 rounded-full p-3 mx-1'>
+                  <FaFacebook className='text-sm'> </FaFacebook>
+                </a>
+                <a href='#' className='border-2 border-white-200 rounded-full p-3 mx-1'>
+                  <FaLinkedin className='text-sm'> </FaLinkedin>
+                </a>
+                <a href='#' className='border-2 border-white-200 rounded-full p-3 mx-1'>
+                  <FaGoogle className='text-sm'> </FaGoogle>
+                </a>
+              </div>
+            </div> {/* social login section*/}
+            <p className='text-gray-600-400 my-3'>or use your email account</p>
+            <div className='flex flex-col items-center'>
+              <div className='bg-gray-300 w-64 p-2 flex items-center mb-3'>
+                <FaRegEnvelope className='text-grey-300 m-2'></FaRegEnvelope>
+                <input type="email" name="email" placeholder="Email" className='bg-gray-300 outline-none test-sm flex-1'></input>
+              </div>
+              <div className='bg-gray-300 w-64 p-2 flex items-center'>
+                <MdLockOutline className='text-grey-300 m-2'></MdLockOutline>
+                <input type="password" name="password" placeholder="Password" className='bg-gray-300 outline-none test-sm flex-1'></input>
+              </div>
+              <div className='flex w-64 mb-5 justify-between'>
+                <label className='flex items-center text-xs'><input type="checkbox" name="remember" className='mr-1'/>Remember me</label>
+                <a href='#' className='text-xs'>Forgot password?</a>
+              </div>
+              <a href='#' className='rounded-full border-green-500 text-green-500 border-2 px-12 py-2 inline-block font-semibold hover:bg-green-500 hover:text-white'>Sign in</a>
+            </div>{/*input fields */}
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+          </div>
+          <div className='w-2/5 bg-green-600 text-white rounded-tr-2xl rounded-br-2xl py-36 px-12'>
+            <h2 className='text-3xl font-bold mb-2'>Hello!</h2> 
+            <div className='border-2 w-10 border-white inline-block mb-2 rounded'></div>
+            <p className='mb-2'>Fill up some details and start using our application </p>
+            <a href='#' className='rounded-full border-white border-2 px-12 py-2 inline-block font-semibold hover:bg-white hover:text-green-500'>Sign up</a>
+          </div>  {/* Signin  section*/}
+        </div>  {/* Main section*/}
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
