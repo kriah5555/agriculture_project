@@ -13,6 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+       
         <div className='bg-gray-200 rounded-2xl shadow-2xl flex w-2/3 text-center max-w-4xl'>
           <div className='w-3/5 p-5'>
             <div className='text-left font-bold'>

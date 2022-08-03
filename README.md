@@ -37,3 +37,6 @@ installation
 1. talwindcss ---> https://tailwindcss.com/docs/guides/nextjs
 2. icom --> https://react-icons.github.io/react-icons/
 3. pre written code ---> https://headlessui.com/react/switch
+4. npm install @headlessui/react --> https://headlessui.com/react/menu  
+5. npm install @heroicons/react
+
