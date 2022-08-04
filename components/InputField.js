@@ -6,8 +6,6 @@ export default function InputField() {
     {type: "date", name: "date", required: true, label: "Date"},
     {type: "text", name: "favorite_color", required: false, label: "Favorite color"},
 ]
-
-
   return (
     fields.map((field, i) => (
       <div key={i}>
