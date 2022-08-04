@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
 import InputField from '../components/InputField';
-import NavBar from '../components/NavBar';
 
 export default function Register() {
   return (
