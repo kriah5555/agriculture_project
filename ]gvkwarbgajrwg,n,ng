@@ -1,0 +1,30 @@
+warning: LF will be replaced by CRLF in pages/_app.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in pages/index.js.
+The file will have its original line endings in your working directory
+[1mdiff --git a/pages/index.js b/pages/index.js[m
+[1mindex 7105e95..58b57bc 100644[m
+[1m--- a/pages/index.js[m
+[1m+++ b/pages/index.js[m
+[36m@@ -38,17 +38,17 @@[m [mexport default function Home() {[m
+             <div className='flex flex-col items-center'>[m
+               <div className='bg-gray-300 w-64 p-2 flex items-center mb-3'>[m
+                 <FaRegEnvelope className='text-grey-300 m-2'></FaRegEnvelope>[m
+[31m-                <input type="email" name="email" placeholder="Email" className='bg-gray-300 outline-none test-sm flex-1'></input>[m
+[32m+[m[32m                <input type="text" name="username" placeholder="Username" className='bg-gray-300 outline-none test-sm flex-1'></input>[m
+               </div>[m
+               <div className='bg-gray-300 w-64 p-2 flex items-center'>[m
+                 <MdLockOutline className='text-grey-300 m-2'></MdLockOutline>[m
+                 <input type="password" name="password" placeholder="Password" className='bg-gray-300 outline-none test-sm flex-1'></input>[m
+               </div>[m
+[31m-              <div className='flex w-64 mb-5 justify-between'>[m
+[32m+[m[32m              {/* <div className='flex w-64 mb-5 justify-between'>[m
+                 <label className='flex items-center text-xs'><input type="checkbox" name="remember" className='mr-1'/>Remember me</label>[m
+                 <a href='#' className='text-xs'>Forgot password?</a>[m
+[31m-              </div>[m
+[31m-              <a href='#' className='rounded-full border-green-500 text-green-500 border-2 px-12 py-2 inline-block font-semibold hover:bg-green-500 hover:text-white'>Sign in</a>[m
+[32m+[m[32m              </div> */}[m
+[32m+[m[32m              <a href='#' className='mt-5 rounded-full border-green-500 text-green-500 border-2 px-12 py-2 inline-block font-semibold hover:bg-green-500 hover:text-white'>Sign in</a>[m
+             </div>{/*input fields */}[m
+ [m
+           </div>[m

@@ -28,3 +28,7 @@ a {
     background: black;
   }
 }
+
+.custom-img {
+  background-image: url('/landingpage/image1.jpg');
+}
