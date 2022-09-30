@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -27,7 +27,7 @@ a {
     color: white;
     background: black;
   }
-}
+} */
 
 .custom-img {
   background-image: url('/landingpage/image1.jpg');
@@ -50,7 +50,7 @@ a {
   height: 100%;
   opacity: 0;
   transform: translateX(-50%);
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 
 @media screen and (min-width:600px) {
@@ -71,7 +71,7 @@ a {
   width: 50%;
   padding: 3rem;
   background: rgba(0,0,0,.3);
-  animation: slide-up 1s ease .5s;
+  animation: slide-up 2s ease .5s;
   animation-fill-mode: forwards;
   /* visibility: hidden; */
   /* opacity: 0; */

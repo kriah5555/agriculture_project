@@ -16,7 +16,7 @@ const data = {
             desc: 'description bhere or let it be give dome option'
         },
         {
-            image:"/landingpage/4.jpg",
+            image:"/landingpage/slide4.jpg",
             heading: 'slide 1',
             desc: 'description bhere or let it be give dome option'
         },
