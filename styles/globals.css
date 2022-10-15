@@ -29,6 +29,9 @@ a {
   }
 } */
 
+body {
+  background-color: black;
+}
 .custom-img {
   background-image: url('/landingpage/image1.jpg');
 }
@@ -138,4 +141,29 @@ hr {
   height: 2px;
   background: wheat;
   width: 50%;
+}
+
+/* navbar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(83, 228, 64);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }

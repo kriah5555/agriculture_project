@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 // import { MdLockOutline } from "react-icons/md";
 import Hero from '../components/Hero';
 import Slider from '../components/Slider';
+import ContactUs from '../components/ContactUs';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Hero heading="Headings" message="messages something to be written here about the product or complany"  ></Hero>
       <Slider/>
+      <ContactUs/>
     </div>
   )
 }
